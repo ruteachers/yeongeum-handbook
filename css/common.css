@@ -2,9 +2,7 @@ body {
     margin: 0;
     background: #f7f7f7;
 }
-ul {
 
-}
 h1 {
     font-size: 1.8em;
 }
@@ -99,8 +97,20 @@ th, td {
 }
 
 @media (max-width: 750px) {
-    .wrapper {
-        padding: .3em;
+    h1 {
+        font-size: 1.4em;
     }
-
+    h2 {
+        font-size: 1.2em;
+    }
+    ul {
+        padding: 0em;
+        list-style-position: inside;
+    }
+    .wrapper {
+        padding: .8em;
+    }
+    .book-title span {
+        display: block;
+    }
 }
