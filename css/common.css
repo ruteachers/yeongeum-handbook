@@ -97,3 +97,10 @@ th, td {
     position:relative;
     top:1px;
 }
+
+@media (max-width: 750px) {
+    .wrapper {
+        padding: .3em;
+    }
+
+}
