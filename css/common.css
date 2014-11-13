@@ -24,6 +24,7 @@ h2 {
 }
 p {
     text-align: justify;
+    1em;
 }
 ul {
     list-style-position: inside;
