@@ -6,12 +6,29 @@ body {
 h1 {
     font-size: 1.8em;
 }
+.subheading {
+    font-size: .7em;
+    font-weight: normal;
+    display: block;
+}
 h2 {
     font-size: 1.2em;
+}
+.clear-fix {
+    *zoom: 1;
+}
+.clear-fix:after {
+    display: block;
+    content: "";
+    clear: both;
 }
 p {
     text-align: justify;
 }
+ul {
+    list-style-position: inside;
+}
+
 .wrapper {
     background: #ffffff;
     max-width: 750px;
@@ -47,7 +64,15 @@ th, td {
     padding-bottom: .5em;
     margin-top: 1em;
 }
-
+.cover {
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.8);
+    -moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.8);
+    box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.8);
+    width: 40%;
+    float: left;
+    display: block;
+    margin-right: 1em;
+}
 .btn-wrap {
     max-width: 20em;
     margin: 0 auto;
@@ -112,5 +137,12 @@ th, td {
     }
     .book-title span {
         display: block;
+    }
+    @media (max-width: 550px) {
+        .cover {
+            float: none;
+            margin-right: 0;
+            width: 100%;
+        }
     }
 }
