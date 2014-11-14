@@ -1,8 +1,12 @@
 body {
+    font-size: 18px;
+    line-height: 1.7;
     margin: 0;
     background: #f7f7f7;
+    font-family: Ubuntu, Arial,'Apple SD Gothic Neo','애플 SD 고딕 Neo','NanumBarunGothic','NanumBarunGothicOTF','나눔바른고딕','나눔바른고딕OTF','Malgun Gothic','맑은 고딕','NanumGothic','NanumGothicOTF', '나눔고딕','나눔고딕OTF',sans-serif;
+    /* for ie7 */
+    *font-family: 'Apple SD Gothic Neo','애플 SD 고딕 Neo','NanumBarunGothic','NanumBarunGothicOTF','나눔바른고딕','나눔바른고딕OTF','Malgun Gothic','맑은 고딕','NanumGothic','NanumGothicOTF', '나눔고딕','나눔고딕OTF',sans-serif;
 }
-
 h1 {
     font-size: 1.8em;
 }
@@ -139,11 +143,12 @@ th, td {
     .book-title span {
         display: block;
     }
-    @media (max-width: 550px) {
-        .cover {
-            float: none;
-            margin-right: 0;
-            width: 100%;
-        }
+}
+
+@media (max-width: 550px) {
+    .cover {
+        float: none;
+        margin-right: 0;
+        width: 100%;
     }
 }
